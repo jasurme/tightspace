@@ -28,7 +28,16 @@ It produces ignored visual snapshots in `test-artifacts/` while checking desktop
 2. In **Repository settings → Pages**, choose **Deploy from a branch**, then select `main` and `/(root)`.
 3. Verify `tightspace.xyz` in the GitHub account's Pages settings before changing DNS.
 4. In the repository's Pages settings, set the custom domain to `tightspace.xyz`.
-5. At the DNS provider, point the apex domain to GitHub Pages using all four documented A records. Optionally point `www` to `jasurme.github.io` with a CNAME.
+5. At the DNS provider, replace parking records with these GitHub Pages records:
+
+   | Type | Host | Value |
+   | --- | --- | --- |
+   | A | `@` | `185.199.108.153` |
+   | A | `@` | `185.199.109.153` |
+   | A | `@` | `185.199.110.153` |
+   | A | `@` | `185.199.111.153` |
+   | CNAME | `www` | `jasurme.github.io` |
+
 6. After DNS and certificate provisioning finish, enable **Enforce HTTPS**.
 
 Keep the root `CNAME` file. Avoid wildcard DNS records and remove conflicting apex or `www` records. DNS and HTTPS provisioning can take up to 24 hours.

@@ -18,6 +18,8 @@
 ## Change log
 
 - 2026-07-27: Initial site foundation created with About, Posts, one article, persistent themes, accessible search, responsive styling, deployment documentation, and automated checks.
+- 2026-07-27: Pushed the tested root commit `1b9e14a` to `jasurme/tightspace` on `main`, enabled public GitHub Pages from `main` at `/(root)`, and confirmed GitHub's build completed without error.
+- 2026-07-27: GitHub recognized the custom `CNAME` as `tightspace.xyz`, but live DNS still resolves the apex to `162.255.119.168` and `www` to `parkingpage.namecheap.com`; HTTPS therefore times out. Replace those Namecheap parking records with GitHub Pages DNS records before considering the custom-domain launch complete.
 
 ## Test and lesson log
 
